@@ -21,4 +21,25 @@ Pour intégrer la fonction `ft_printf` dans votre projet, suivez ces étapes :
    ```bash
    make
    ```
+## Utilisation
+
+1. Incluez le fichier d'en-tête ft_printf.h dans vos fichiers source.
+	```c
+	#include "ft_printf.h"
+	```
+2. Utilisez la fonction ft_printf dans votre code
+	```c
+	int main() {
+    char *name = "John";
+    int age = 28;
+    double salary = 50000.75;
+
+    ft_printf("Bienvenue, %s!\n", name);
+    ft_printf("Vous avez %d ans.\n", age);
+    ft_printf("Votre salaire est de %.2f dollars par an.\n", salary);
+
+    return 0;
+	}
+	```
+
 
